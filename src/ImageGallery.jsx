@@ -5,6 +5,7 @@ const ImageGallery = () => {
   return (
     <div>
       <div className="images-wrapper">feuture 2</div>
+      <div>hello</div>
     </div>
   )
 }
