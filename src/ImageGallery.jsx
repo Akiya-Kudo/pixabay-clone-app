@@ -4,7 +4,7 @@ import './ImagesGallery.css';
 const ImageGallery = () => {
   return (
     <div>
-      <div className="images-wrapper"></div>
+      <div className="images-wrapper">wrapper</div>
     </div>
   )
 }
