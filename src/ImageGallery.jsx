@@ -3,7 +3,7 @@ import './css/ImagesGallery.css';
 
 const ImageGallery = ({ fetchData }) => {
   return (
-    <div>
+    <div className="content">
       <div className="images-wrapper">
           { fetchData.map((data) => (     
             <div className='image' key={data.id}>

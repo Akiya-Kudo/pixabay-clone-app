@@ -1,24 +1,14 @@
-
+html {
+  height: 100%;
+  margin: 0; 
+  box-sizing: border-box;
+}
 
 .container {
   width: 100%;
   height: 100vh;
-  padding: 36px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.container h2 {
-  margin-bottom: 12px;
-  font-size: 2.5rem;
-  color: rgb(74, 113, 96);
-}
-
-.container input {
-  min-width: 360px;
-  padding: 5px 12px;
-  margin-bottom: 36px;
-  outline: none;
-
 }
