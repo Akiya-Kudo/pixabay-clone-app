@@ -1,3 +1,6 @@
+.content {
+    flex: 1;
+}
 .images-wrapper {
     display: grid;
     grid-template-columns: 130px 130px 130px;
@@ -27,3 +30,35 @@
     transition-duration: .3s;
     transform: translateY(5px); 
 }
+
+@media(max-width: 800px) {
+    .images-wrapper {
+        grid-template-columns: 130px 130px ;
+    }
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 600px) {
+    .images-wrapper {
+        grid-template-columns: 130px 130px;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 400px) {
+    .images-wrapper {
+        grid-template-columns: 130px;
+        grid-gap: 40px;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+}
+

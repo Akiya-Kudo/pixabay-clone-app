@@ -1,14 +1,19 @@
-import './App.css';
+import { useState } from 'react';
+import './css/App.css';
+import Footer from './Footer';
+import Header from './Header';
 import ImageGallery from './ImageGallery';
 
+
 function App() {
+
+  const [fetchData, setFetchData] = useState([]);
+
   return (
     <div className="container">
-      <h2>My Pixabay</h2>
-      <form>
-        <input type="text" placeholder="画像を探す"/>
-      </form>
-      <ImageGallery />
+      <Header setFetchData={setFetchData}/>
+      <ImageGallery fetchData={fetchData} />
+      <Footer />
     </div>
   );
 }
