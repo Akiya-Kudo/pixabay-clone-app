@@ -20,6 +20,9 @@ function Header(props) {
       e.preventDefault();
       setInput(ref.current.value);
       setNumPhoto(refNum.current.value);
+      
+      const input1 = document.getElementById('input1');
+      input1.value = "";
     }
     const serchApi = () => {
       // APIを叩いていく〜〜〜！
@@ -41,7 +44,7 @@ function Header(props) {
     <div className='header'>
         <h2>Picture Digg</h2>
         <form onSubmit={ (e) => handleSubmit(e)}>
-          <input className="text-input" type="text" placeholder="画像を探す" ref={ ref }/>
+          <input className="text-input" type="text" placeholder="画像を探す" ref={ ref } id="input1"/>
           <select className="num-input" name="photoNum" id="photoNum" ref={ refNum }>
             {
               num.map((i) => (
